@@ -27,5 +27,6 @@ export const personalInfo: PersonalInfo = {
     phone: '+880 1621 28 5057',
     github: 'https://github.com',
     linkedin: 'https://www.linkedin.com/in/bahauddin-chishte/',
+    X: 'https://x.com/bahauddin_ai'
   },
-};
+}

@@ -30,15 +30,15 @@ export default function Hero() {
                     <span className="font-medium">LinkedIn</span>
                     <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
-                  {/* <a 
-                    href={personalInfo.contact.github}
+                  <a 
+                    href={personalInfo.contact.X}
                     className="flex items-center gap-2 hover:text-slate-200 transition-colors group"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="font-medium">GitHub</span>
+                       <span className="font-medium">X</span>
                     <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </a> */}
+                  </a>
                 </div>
               </div>
 
