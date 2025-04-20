@@ -5,14 +5,14 @@ const projects = [
     {
     "title": "Bangladesh To Abroad",
     "description": "Helping Banglai students explore global opportunities including education, job and competitions through curated resources, details guide, application tips, and peer support. 🟢 WIP: ntegrating AI tools to personalize opportunity matching and developing a forum to foster connection.",
-    "tech": ["Javascript", "React" "TypeScript", "TailwindCSS", "Supabase", "Astro", "Google Analytics"],
+    "tech": ["Javascript", "React", "TypeScript", "TailwindCSS", "Supabase", "Astro", "Google Analytics"],
     "live": "https://bangladesh2abroad.com",
-    "image": "https://live.staticflickr.com/65535/54463525595_17f861f1f1_b.jpg"
+    "image": "https://live.staticflickr.com/65535/54463361644_f342d08d48_b.jpg"
   },
   {
     "title": "OnnoRokom School",
     "description": "A free online learning platform providing academic and skill development resources for underprivileged students, serving 10K+ visitors daily.",
-    "tech": ["Next.js", "React" "TypeScript", "TailwindCSS", "Supabase"],
+    "tech": ["Next.js", "React", "TypeScript", "TailwindCSS", "Supabase"],
     "live": "https://onnorokomschool.org",
     "image": "https://live.staticflickr.com/65535/54463525595_17f861f1f1_b.jpg"
   },
