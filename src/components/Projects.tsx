@@ -2,12 +2,19 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
+    {
+    "title": "Bangladesh To Abroad",
+    "description": "Helping Banglai students explore global opportunities including education, job and competitions through curated resources, details guide, application tips, and peer support. 🟢 WIP: ntegrating AI tools to personalize opportunity matching and developing a forum to foster connection.",
+    "tech": ["Javascript", "React" "TypeScript", "TailwindCSS", "Supabase", "Astro", "Google Analytics"],
+    "live": "https://bangladesh2abroad.com",
+    "image": "https://live.staticflickr.com/65535/54463525595_17f861f1f1_b.jpg"
+  },
   {
     "title": "OnnoRokom School",
     "description": "A free online learning platform providing academic and skill development resources for underprivileged students, serving 10K+ visitors daily.",
-    "tech": ["Next.js", "TypeScript", "TailwindCSS", "MongoDB"],
+    "tech": ["Next.js", "React" "TypeScript", "TailwindCSS", "Supabase"],
     "live": "https://onnorokomschool.org",
-    "image": "https://live.staticflickr.com/65535/54300859257_af9f01025c_k.jpg"
+    "image": "https://live.staticflickr.com/65535/54463525595_17f861f1f1_b.jpg"
   },
   {
     "title": "Earn4Edu",
@@ -19,7 +26,7 @@ const projects = [
   {
     "title": "Bazardor",
     "description": "Bangladesh’s essential item price tracker, ensuring transparency and fairness in the market by comparing real-time prices.",
-    "tech": ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
+    "tech": ["Next.js", "TypeScript", "Supabase", "TailwindCSS"],
     "live": "https://ajker-bazardor.info",
     "image": "https://live.staticflickr.com/65535/54301984598_2645d9dc9a_k.jpg"
   },
