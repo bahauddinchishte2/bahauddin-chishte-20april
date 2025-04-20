@@ -5,7 +5,7 @@ const projects = [
     {
     "title": "Bangladesh To Abroad",
     "description": "Helping Banglai students explore global opportunities including education, job and competitions through curated resources, details guide, application tips, and peer support. 🟢 WIP: ntegrating AI tools to personalize opportunity matching and developing a forum to foster connection.",
-    "tech": ["Javascript", "React", "TypeScript", "TailwindCSS", "Supabase", "Astro", "Google Analytics"],
+    "tech": ["Astro", "React", "TypeScript", "TailwindCSS", "MDX", "Fuse Js", "Supabase"],
     "live": "https://bangladesh2abroad.com",
     "image": "https://live.staticflickr.com/65535/54463361644_f342d08d48_b.jpg"
   },
