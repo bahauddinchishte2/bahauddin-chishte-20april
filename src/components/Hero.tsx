@@ -99,15 +99,15 @@ export default function Hero() {
 
             <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-6">
               <div className="text-center sm:text-left">
-                <div className="text-xl sm:text-2xl font-bold text-blue-400">5+</div>
-                <div className="text-slate-400 text-xs sm:text-sm">Years of Coding</div>
+                <div className="text-xl sm:text-2xl font-bold text-blue-400">6+</div>
+                <div className="text-slate-400 text-xs sm:text-sm">Years of Experience</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-xl sm:text-2xl font-bold text-pink-400">3+</div>
+                <div className="text-xl sm:text-2xl font-bold text-pink-400">4+</div>
                 <div className="text-slate-400 text-xs sm:text-sm">Social Projects</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-xl sm:text-2xl font-bold text-purple-400">80000+</div>
+                <div className="text-xl sm:text-2xl font-bold text-purple-400">400000+</div>
                 <div className="text-slate-400 text-xs sm:text-sm">Lives Impacted</div>
               </div>
             </div>

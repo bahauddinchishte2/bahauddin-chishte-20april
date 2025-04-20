@@ -18,9 +18,9 @@ export const interests: Interest[] = [
     icon: 'Code2',
   },
   {
-    title: 'Startup & Entrepreneurship',
+    title: 'Startup, SaaS & Entrepreneurship',
     description:
-      'Exploring the frontiers of artificial intelligence and its applications.',
+      'Exploring the frontiers of tech, artificial intelligence & entrepreneurship and its applications.',
     icon: 'Brain',
   },
   {
