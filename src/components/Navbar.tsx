@@ -14,9 +14,9 @@ export default function Navbar() {
     { label: 'Projects', href: '#projects', icon: FolderGit2 },
     { label: 'Gallery', href: '#gallery', icon: Image },
     { label: 'Companies', href: '#companies', icon: Building2 },
+    { label: 'Impact & Volunteering', href: '#impact', icon: HandHeart },
     { label: 'Achievements', href: '#achievements', icon: Trophy },
     { label: 'Interests', href: '#interests', icon: Heart },
-    { label: 'Impact & Volunteering', href: '#impact', icon: HandHeart },
     { label: 'Contact', href: '#contact', icon: Mail },
   ];
 
