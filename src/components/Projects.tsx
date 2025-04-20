@@ -10,6 +10,13 @@ const projects = [
     "image": "https://live.staticflickr.com/65535/54463361644_f342d08d48_b.jpg"
   },
   {
+    "title": " Digital SAT Desmos Guide",
+    "description": "A free interactive learning website offering step-by-step tutorials, tailored strategies, and strategies for using the Desmos calculator for Digital SAT Math score Improvement.",
+    "tech": ["Vite", "TypeScript", "TailwindCSS", "Supabase"],
+    "live": "https://onnorokomschool.org",
+    "image": "https://live.staticflickr.com/65535/54463525580_d7d441ff41_b.jpg"
+  },
+  {
     "title": "OnnoRokom School",
     "description": "A free online learning platform providing academic and skill development resources for underprivileged students, serving 10K+ visitors daily.",
     "tech": ["Next.js", "React", "TypeScript", "TailwindCSS", "Supabase"],
