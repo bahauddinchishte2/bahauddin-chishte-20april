@@ -144,7 +144,7 @@ export default function Gallery() {
   const imageRows = createImageRows(filteredImages);
 
   return (
-    <section className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 lg:p-12 border border-slate-700/50" id="gallery">
+    <section className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 lg:p-12 border border-slate-700/50 w-full" id="gallery">
       <div className="max-w-2xl mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 relative inline-block">
           Gallery
@@ -186,7 +186,7 @@ export default function Gallery() {
         
         <div 
           ref={scrollContainerRef}
-          className="overflow-x-auto pb-4 hide-scrollbar"
+          className="overflow-x-auto pb-4 hide-scrollbar max-w-full"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           <div className="flex gap-4">

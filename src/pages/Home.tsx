@@ -12,7 +12,7 @@ import Companies from '../components/Companies';
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 w-full overflow-hidden">
       <Hero />
       <EducationJourney />
       <Experience />

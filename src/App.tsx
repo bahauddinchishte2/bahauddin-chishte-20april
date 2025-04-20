@@ -8,9 +8,9 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row overflow-hidden">
             <Navbar />
-            <main className="flex-1 lg:pl-[240px]">
+            <main className="flex-1 lg:pl-[240px] overflow-y-auto overflow-x-hidden">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <Home />
               </div>
