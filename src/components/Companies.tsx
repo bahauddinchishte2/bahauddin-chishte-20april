@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { companies } from '../data/companies';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Companies() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-
+  const [isPaused, setIsPaused] = useState(false);
+  const animationRef = useRef<number | null>(null);
+  const scrollAmount = 1; // Pixels to scroll per frame
+  
   const handleScroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const scrollAmount = 300;
@@ -15,8 +18,40 @@ export default function Companies() {
     }
   };
 
+  const scrollAnimation = () => {
+    if (scrollContainerRef.current && !isPaused) {
+      scrollContainerRef.current.scrollLeft += scrollAmount;
+      
+      // If we've scrolled to the end, reset to start
+      if (scrollContainerRef.current.scrollLeft >= 
+          scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth) {
+        scrollContainerRef.current.scrollLeft = 0;
+      }
+      
+      animationRef.current = requestAnimationFrame(scrollAnimation);
+    } else if (isPaused && animationRef.current) {
+      cancelAnimationFrame(animationRef.current);
+    }
+  };
+
+  // Set up autoscroll
+  useEffect(() => {
+    if (!isPaused) {
+      animationRef.current = requestAnimationFrame(scrollAnimation);
+    }
+    
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [isPaused]);
+
   return (
-    <section className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 lg:p-12 border border-slate-700/50" id="companies">
+    <section 
+      className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 lg:p-12 border border-slate-700/50" 
+      id="companies"
+    >
       <div className="max-w-2xl mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 relative inline-block">
           Companies I've Worked With
@@ -42,6 +77,10 @@ export default function Companies() {
           ref={scrollContainerRef}
           className="overflow-x-auto py-4 pb-6 hide-scrollbar"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={() => setIsPaused(true)}
+          onTouchEnd={() => setIsPaused(false)}
         >
           <div className="flex gap-6 min-w-max">
             {companies.map((company) => (
